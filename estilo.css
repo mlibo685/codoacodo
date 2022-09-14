@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: "header  header   header  header  header   header"
+                          "nav     nav      nav     nav     nav      nav"
+                        "ingresos ingresos ofertas ofertas especial especial"
+                         "envios  envios  envios   envios  envios   envios"
+                         "footer   footer footer   footer  footer   footer";
+    grid-gap: 20px;
+    height: 100vh;
+}
+.header {
+    grid-area: header;
+    text-align: center;
+    
+}
+.header > h1 {
+    color: rgba(3, 29, 5, 0.178);
+    
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+}
+.ingresos {
+    grid-area: ingresos;
+}
+.ofertas {
+    grid-area: ofertas;
+}
+.especial {
+    grid-area: especial;
+}
+.envios {
+    grid-area: envios;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+.item {
+    background-color: greenyellow;
+    padding: 10px;
+    color: rgb(1, 15, 1);
+    border-radius: 10px;
+}
